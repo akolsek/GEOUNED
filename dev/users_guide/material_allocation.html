@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Material Allocation &#8212; GEOUNED 0.1.dev1+g3b92fc9 documentation</title>
+    <title>Material Allocation &#8212; GEOUNED 0.1.dev1+g66a1f11 documentation</title>
   
   
   
@@ -38,7 +38,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="../_static/documentation_options.js?v=1962b0eb"></script>
+    <script src="../_static/documentation_options.js?v=08515eea"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'users_guide/material_allocation';</script>
@@ -54,7 +54,7 @@
     <link rel="prev" title="Simplification of Geometry" href="simplification.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1+g3b92fc9" />
+  <meta name="docsearch:version" content="0.1.dev1+g66a1f11" />
   </head>
   
   
@@ -414,18 +414,7 @@
                   
   <section id="material-allocation">
 <h1>Material Allocation<a class="headerlink" href="#material-allocation" title="Link to this heading">#</a></h1>
-<p>The material of the components can be assigned directly in the tree CAD by including a text with _mXX_ within the component name.</p>
-<a class="reference internal image-reference" href="users_guide/_static/mat_tag.png"><img alt="Example of a CAD tree with a _mXX_ tag." class="align-center" src="users_guide/_static/mat_tag.png" style="width: 50%;" />
-</a>
-<p>The material assigned to the corresponding cell should be defined in the material definition file whose name is provided by the matFile keyword.
-This file has the following format:</p>
-<p># Materials and density</p>
-<p># FORMAT: ID DENS NAME</p>
-<p>1 1.0 Water</p>
-<p>Where # is used for comments and the rest of the lines specifies the id of the material, the nominal density and the text to be included as a comment.
-The nominal density value is multiplied by -1 so the criterium is inverted with respect to MCNP one (i.e. g/cm3 positive and atm/b/cm negative).
-The nominal density can be changed by the inclusion of a multiplication factor using the following text in the CAD tree _mXX_dXX.XX_.
-For example, in our case _m01_d2.0_ will produce a cell with material 1 and density 2.0.</p>
+<p>To be added.</p>
 </section>
 
 
